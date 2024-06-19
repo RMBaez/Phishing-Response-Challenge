@@ -208,75 +208,120 @@ Question 8 - First Malicious Email: What is the reverse DNS hostname of the send
 
 
 <p>
-Question 9. Same as before, we'll use Find and search for “From”.
+Question 9 - First Malicious Email: What is the full URL?
 </p>
 <br />
 
 
 <p>
-<img width="541" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/4130de1d-f8d1-4989-8b95-55cd9459fd55">
+<img width="506" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/b706fae7-1af0-48eb-8160-0188e18f5a28">
 </p>
 
+<p>The easiest way to do this is by right-clicking the URL in the email when viewed through an email client, because email files can contain a lot of http/https links, making it time-consuming to go through them to find the right one.</p>
+
+
+
 <p>
-Question 10. Searching for the “To” field and value.
+Question 10 - Second Malicious Email: What is the sending address?
 </p>
 <br />
 
 
 <p>
-<img width="541" alt="Screenshot 2024-06-07 at 7 16 25 PM" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/81a51ff1-c4b0-4762-a267-57f33f238483">
+<img width="514" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/28f2a3a5-c107-4758-968d-c4ab5d56191b">
 </p>
 
-<p>
-Questoin 11. Searching for the “Subject” field and value.
-</p>
+<p> Opening the email in a text editor, we'll use CTRL+F to search for the ‘From’ property. </p>
+
+
+
+<p> Question 11 - Second Malicious Email: What is the subject line? </p>
 <br />
 
 
 <p>
-<img width="541" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/eb374b24-2a0d-4522-83ec-b3ac31964d1b">
+<img width="514" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/71a189fd-2e6c-4c8b-bf1c-021e77ce4304">
 </p>
+
+<p>Looking down a few lines or searching for ‘Subject’ will give us the value.</p>
+
+
   
 <p>
-Question 12. Searching for the “Date” field and value.
+Question 12 - Second Malicious Email: Who are the recipients? </p>
+<br />
+
+
+<p>
+<img width="495" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/f9e32cde-07aa-4f45-a540-5512d7add57f">
+</p>
+
+<p>Searching for the ‘To’ property we can find one recipient listed.</p>
+
+
+
+<p>
+Question 13 - Second Malicious Email: What is the Reply-to address? (If not present, write "none")
 </p>
 <br />
 
 
 <p>
-<img width="334" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/a2c5d7fa-ed1c-4ae6-bd99-bb7fc8bd3b35">
+Searching for ‘Reply’ or ‘Reply-to’ shows no results, so this email is not using a reply-to address to receive replies.
 </p>
 
+
+
 <p>
-Question 13. We'll search for the “X-Sender-IP” field and its value.
+Question 14 - Second Malicious Email: What is the date and time the email was sent?
 </p>
 <br />
 
 
 <p>
-<img width="594" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/b02f5162-9866-431d-a731-0227cd9dc002">
+<img width="382" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/033b4d6d-5fcf-4a95-b0ec-712f6ac05ac2">
 </p>
 
-<p>
-Question 14. Using the IP from the previous question, we'll submit it to https://whois.domaintools.com.
-</p>
-<br />
+<p> Searching for ‘Date’ will give us the timestamp of the email. </p>
+
 
 
 <p>
-<img width="545" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/480d7f9d-265c-4009-b913-894eacfefbe4">
-</p>
-
-<p>
-Question 15. From within the text editor we can search for “filename”.
+Question 15 - Second Malicious Email: What is the sending server IP?
 </p>
 <br />
 
 <p>
-<img width="545" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/be2871cc-c8d6-41fa-9203-d2d422920b35">
+<img width="361" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/bde3c349-f859-4ac1-880c-2fdad5bbdba8">
 </p>
 
+<p>Searching for ‘Sender’ we can find the sending server's IP address.</p>
+
+
+
 <p>
-Question 16. In Thunderbird we can right-click the attachment and click Save-As, then save it to the Desktop. We'll then open a PowerShell window and use the Get-FileHash cmdlet to retrieve the MD5 and SHA256 hashes. As SHA256 is the default hashing algorithm we don't need to state it, however we must do this for MD5.
+Question 16 - Second Malicious Email:  What is the reverse DNS hostname of the sending IP?
 </p>
 <br />
+
+<p> <img width="491" alt="Screenshot 2024-06-18 at 10 57 19 PM" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/806bb7d4-ff8b-4781-9be1-4de9da9954d4">
+</p>
+
+<p> Searching for the IP address on Domain Tools WHOis lookup, we can see the resolved host is a Gmail sending server, owned by Google. </p>
+
+
+
+<p> Question 17 - Second Malicious Email: What is the file name, including extension? </p>
+<br />
+
+<p> <img width="491" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/84f6c75a-5c12-4a1a-a350-d43d987c9d01"> </p>
+
+<p> Looking in the Thunderbird client we can see the attachment shown at the bottom of the windows. We need to submit the ‘real’ name of the attachment that was removed by our email gateway, which can be found within the text file attachment. </p>
+
+
+
+<p> Question 18 - Second Malicious Email: What is the SHA256 hash value of the file? </p>
+
+<p>If we were dealing with a real malicious attachment then we would want to download it within a virtual machine (that is only used for analysis and doesn't hold corporate data) and hash the file using PowerShell or Linux CLI (Get-FileHash vs sha256sum).
+
+However in this fictional scenario, we're provided with the SHA256 hash, as we no longer have access to the real attachment (shown in the screenshot above).</p>
