@@ -40,11 +40,24 @@ This tutorial outlines the identification of phishing emails and manually triage
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img width="538" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/54936881-ced9-41cd-9a83-217b9da3594e">
+Question 1: Which of the 5 emails have you identified as being malicious?
+</p>
+<br />
+
+<p>
+<img width="569" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/bfed199c-4b3d-4b17-9cf5-9b8d895fca00">
 </p>
 
 <p>
-Question 1. Opening the email in Sublime Text we can use the Find feature (CTRL+F) to search for “From”.
+It is immediately clear that this email is highly suspicious:
+
+The sending address is set as ‘auto-confirm.info-amazon.co.uk (where info-amazon.co.uk is the domain, not amazon.co.uk), but we can see it’s actually coming from QPE77756@mun.ca. This definitely isn't Amazon
+Formating/styling is inconsistent - emails from huge brands such as Amazon are styled well, and do not use varying fonts
+- The email is not addressed to a specific person which is often seen in legitimate emails, instead it is addressed to a generic recipient ‘Amazon user’
+- The email features poor and incorrect grammar such as ‘Your ID’ (should be your account), and ‘From Amazon Store’
+- Has an obvious call-to-action button, enticing the user to click on the link for the ‘Help Page - Refund Form’ (emails do use legitimate call-to-actions, but this is also a part of phishing with URLs)
+  
+We've found our first malicious phishing email.
 </p>
 <br />
 
