@@ -2,37 +2,39 @@
 
 
 <h1> Phishing Response Challenge </h1>
-This tutorial outlines the retrival of key indicators and artifacts from phishing emails using manual methods and tools.
+This tutorial outlines the identification of phishing emails and manually triage them to report on their intent and collect valuable data.
 <br />
 
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Thubderbird
+- Thunderbird
 - Sublime 3
+- Whois.domaintools.com
 
 
 
 <h2>Deployment and Configuration Steps</h2>
 
-- Question 1 - Email One - What is the sending address?
-- Question 2 - Email One - What is the recipient address?
-- Question 3 - Email One - What is the subject line?
-- Question 4 - Email One - What is the date and time the email was received? (Retrieve this via text editor. Format: DD MonthName YYYY XX:XX:XX)
-- Question 5 - Email One - What is the sending server IP address?
-- Question 6 - Email One - What is the hostname of this IP address? (Reverse DNS Lookup)
-- Question 7 - Email One - What is the full URL hyperlinked within this email?
-- Question 8 - Email One - What is the root domain of the URL?
-- Question 9 - Email Two - What is the sending address?
-- Question 10 - Email Two - What is the recipient address?
-- Question 11 - Email Two - What is the subject line?
-- Question 12 - Email Two - What is the date and time the email was received? (Retrieve this via text editor. Format: DD MonthName YYYY XX:XX:XX)
-- Question 13 - Email Two - What is the sending server IP address?
-- Question 14 - Email Two - What is the hostname of the sending server IP? (Reverse DNS Lookup)
-- Question 15 - Email Two - What is the full file name? (name + extension)
-- Question 16 - Email Two - What are the MD5 and SHA256 hashes of the attached file? (Format: MD5 SHA256)
-
+- Question 1: Which of the 5 emails have you identified as being malicious?
+- Question 2: First Malicious Email: What is the sending address?
+- Question 3: First Malicious Email: What is the subject line?
+- Question 4: First Malicious Email: Who are the recipients?
+- Question 5: First Malicious Email: What is the Reply-to address? (If not present, write "none")
+- Question 6: First Malicious Email: What is the date and time the email was sent?
+- Question 7: First Malicious Email: What is the sending server IP?
+- Question 8: First Malicious Email: What is the reverse DNS hostname of the sending server IP?
+- Question 9: First Malicious Email: What is the full URL?
+- Question 10: Second Malicious Email: What is the sending address?
+- Question 11: Second Malicious Email: What is the subject line?
+- Question 12: Second Malicious Email: Who are the recipients?
+- Question 13: Second Malicious Email: What is the Reply-to address? (If not present, write "none")
+- Question 14: Second Malicious Email: What is the date and time the email was sent?
+- Question 15: Second Malicious Email: What is the sending server IP?
+- Question 16: Second Malicious Email:  What is the reverse DNS hostname of the sending IP?
+- Question 17: Second Malicious Email: What is the file name, including extension?
+- Question 18: Second Malicious Email: What is the SHA256 hash value of the file?
 
 
 <h2>Deployment and Configuration Steps</h2>
