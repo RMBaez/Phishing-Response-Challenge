@@ -39,6 +39,7 @@ This tutorial outlines the identification of phishing emails and manually triage
 
 <h2>Deployment and Configuration Steps</h2>
 
+
 <p>
 Question 1: Which of the 5 emails have you identified as being malicious?
 </p>
@@ -120,35 +121,48 @@ Here's our second malicious email, giving us the answer of ‘1, 3’.
 
 <p> As with email four, we are seeing the same techniques being used. While parts of this email seem suspicious, such as the Reply-to address having the name set as ‘dfsdf’ and the subject line is misleading to individuals that aren't familiar with cryptocurrencies or investing, this is another spam email trying to convince people to sign up to begin trading cryptocurrencies, and is not inherently malicious - although it should be avoided!</p>
 
+
+
 <p>
-Question 2. We'll look for the “To” field and its value.
+Question 2: First Malicious Email: What is the sending address?
 </p>
 <br />
 
 
 <p>
-<img width="538" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/c9b0fac7-16b3-4218-a7b5-c6f2b32dd2ce">
+<img width="434" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/b7eb990a-f811-4e68-b32c-9cdaa83541e1">
+  
+  Opening Email One in Sublime Text and searching for (CTRL+F) ‘From’ we can find the sending email address, which is contained within the <> symbols at the end of the line (everything before this is just a friendly name that can be set as anything, only the final part matters!)
 </p>
 
+
+
 <p>
-Questoin 3. We'll look for the “Subject” field and its value.
+Question 3 - First Malicious Email: What is the subject line?
 </p>
 <br />
 
 
 <p>
-<img width="538" alt="Screenshot 2024-06-07 at 6 58 41 PM" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/6df98f18-4519-426e-8f05-9087ef66ed1c">
+<img width="434" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/3302c4f1-3a19-4374-99b7-b027b8cfde8d">
 </p>
+
+<p>A few lines below, or by searching for ‘Subject’ we can find the subject line.</p>
+
+
   
 <p>
-Question 4. We'll look for the “Date” field and its value.
-</p>
+Question 4 - First Malicious Email: Who are the recipients? </p>
 <br />
 
 
 <p>
-<img width="538" alt="Screenshot 2024-06-07 at 6 58 41 PM" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/9a987c11-1887-4498-bba8-ae599c365659">
+<img width="419" alt="Screenshot 2024-06-18 at 10 25 49 PM" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/5a384a37-1523-4e25-a83a-ea86b1a41563">
+
 </p>
+
+<p> Looking at line 42 we can see the email is being sent to jack.tractive@abcindustries.co.uk. </p>
+
 
 <p>
 Question 5. We'll search for the “X-Sender-IP” field and its value.
