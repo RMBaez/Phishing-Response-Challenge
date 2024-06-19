@@ -44,6 +44,8 @@ Question 1: Which of the 5 emails have you identified as being malicious?
 </p>
 <br />
 
+<p> Email 1 </p>
+
 <p>
 <img width="569" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/bfed199c-4b3d-4b17-9cf5-9b8d895fca00">
 </p>
@@ -61,6 +63,18 @@ We've found our first malicious phishing email.
 </p>
 <br />
 
+<p> Email 2 </p>
+
+<p> <img width="569" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/ca5753d5-0bf5-4bce-b8d1-c20732f5768f"> </p>
+
+<p> 
+- Email is spam-themed, trying to convince non-technical users that they are going to get a portion of someone's lottery winnings
+- The email is not addressed directly to the recipient, suggesting it is being mass-mailed to a large list of people
+- There is a URL in the body, however it is not hyperlinked. A quick Google search tells us that ‘thescottishsun[.]co[.]uk’ is a legitimate news site, and is not malicious
+- The email provides an email address to contact that is different from the sender
+  
+Based on this information, this email is not malicious. It should be classed as spam/scam as it is trying to convince recipients to send personal details to a Gmail address, using the story behind a legitimate news article regarding lottery winners in Scotland.
+</p>
 
 <p>
 <img <img width="538" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/fdc12ecd-417a-43ce-9efb-4dff452d34f6">
