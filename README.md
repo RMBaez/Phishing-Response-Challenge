@@ -115,7 +115,8 @@ Here's our second malicious email, giving us the answer of ‘1, 3’.
 
 <p> Email 5 </p>
 
-<p> </p>
+<p> <img width="553" alt="Screenshot 2024-06-18 at 10 13 33 PM" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/1c0bc65d-e252-4a3e-a141-caa3b3300fea">
+ </p>
 
 <p> As with email four, we are seeing the same techniques being used. While parts of this email seem suspicious, such as the Reply-to address having the name set as ‘dfsdf’ and the subject line is misleading to individuals that aren't familiar with cryptocurrencies or investing, this is another spam email trying to convince people to sign up to begin trading cryptocurrencies, and is not inherently malicious - although it should be avoided!</p>
 
