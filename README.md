@@ -44,6 +44,7 @@ Question 1: Which of the 5 emails have you identified as being malicious?
 </p>
 <br />
 
+
 <p> Email 1 </p>
 
 <p>
@@ -63,6 +64,7 @@ We've found our first malicious phishing email.
 </p>
 <br />
 
+
 <p> Email 2 </p>
 
 <p> <img width="569" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/ca5753d5-0bf5-4bce-b8d1-c20732f5768f"> </p>
@@ -76,9 +78,46 @@ We've found our first malicious phishing email.
 Based on this information, this email is not malicious. It should be classed as spam/scam as it is trying to convince recipients to send personal details to a Gmail address, using the story behind a legitimate news article regarding lottery winners in Scotland.
 </p>
 
+
+<p> Email 3 </p>
+
 <p>
-<img <img width="538" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/fdc12ecd-417a-43ce-9efb-4dff452d34f6">
+<img width="552" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/14d5e5ba-60db-4893-a931-2ebe0cbe96c5">
 </p>
+
+<p> 
+- The sender is a Gmail address, despite the email claiming to be from the UK's National Health Service
+- The image used in the email is a generic stock image and doesn't show any NHS or UK Government branding to match the theme of the email
+- The email is addressed to a generic recipient ‘Sir/Madam’
+- The email is telling the recipient to open the attached file (call-to-action)
+- A sense of urgency is created to generate an emotional response using the sentence ‘If you do not act soon, we will give your slot to someone else’ - this is trying to make people act quicker than they can think
+- The attachment is named ‘MALICIOUS ATTACHMENT REMOVED - SBT.txt’. This is extremely unlikely to be the name of the real attachment - some Email Gateways have the ability to strip out and replace attachments to let recipients know it was malicious.
+  
+As the attachment is just a text file, we can open it without fear of malicious code execution.
+</p>
+
+<p> <img width="553" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/498e2fb1-0520-4b48-be2a-908e7d23ce8c"> </p>
+
+<p> 
+- This informs us that the attachment was indeed malicious, and was actually an executable disguised as a PDF using the double extension ‘.pdf.exe’.
+
+Here's our second malicious email, giving us the answer of ‘1, 3’.
+</p>
+
+
+<p> Email 4 </p>
+
+<p> <img width="553" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/f357ecb9-c83a-4b27-a56f-a3453203f9df"> </p>
+
+<p> Based on the sender, styling, theme, and purpose of this email, we can classify this as spam/newsletter. The email is not using a real call-to-action despite a number of hyperlinks. Further analysis of the links could be conducted using tools such as URL2PNG or WHOis and reputation checks on the domain, however over time you'll learn to understand what is suspicious, and what is just spam.
+</p>
+
+
+<p> Email 5 </p>
+
+<p> </p>
+
+<p> As with email four, we are seeing the same techniques being used. While parts of this email seem suspicious, such as the Reply-to address having the name set as ‘dfsdf’ and the subject line is misleading to individuals that aren't familiar with cryptocurrencies or investing, this is another spam email trying to convince people to sign up to begin trading cryptocurrencies, and is not inherently malicious - although it should be avoided!</p>
 
 <p>
 Question 2. We'll look for the “To” field and its value.
