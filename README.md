@@ -165,16 +165,14 @@ Question 4 - First Malicious Email: Who are the recipients? </p>
 
 
 <p>
-Question 5. We'll search for the “X-Sender-IP” field and its value.
+Question 5 - First Malicious Email: What is the Reply-to address? (If not present, write "none")
 </p>
 <br />
 
-<p>
-<img width="644" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/87334797-2169-41a0-ab51-21ad663cbe9c">
-</p>
+<p> Searching for ‘reply’ or ‘reply-to’ gives us no results, so we will enter the answer as ‘none’. </p>
 
 <p>
-Question 6. Taking the IP from the previous question we'll open the site https://whois.domaintools.com and perform a search. We can see the resolved hostname below.
+Question 6 - First Malicious Email: What is the date and time the email was sent?
 </p>
 <br />
 
